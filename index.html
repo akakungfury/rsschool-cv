@@ -46,54 +46,76 @@
       <main>
         <section class="profile">
           <h3>profile</h3>
-          <p>
-            I've finished BSUIR for radioelectronics-engineer specialization. I
-            had worked as design engineer for two years after university. At the
-            moment I'm QA automation engineer.
-          </p>
-          <p>
-            I had learned JS for some hours per week for two or three months
-            before I found QA automation vacancy. I had completed test task and
-            got this job without any knowledge and experience in manual testing,
-            but of course I tried to learn all necessary things as soon as
-            possible after I started to work. My main working tool is Cypress.
-            This is a testing framework which uses JavaScript as a scripting
-            language. My general work tasks are UI and API testing.
-          </p>
-          <p>
-            I decided to try my self in development. I want to become a good
-            specialist to be able to work on interesting projects and create
-            something really cool. I'm a responsible worker and I always strive
-            to understand well of the tools and technologies which I use. I
-            always like to create, to search solution and to learn something new
-            especially if that can help with my job or improve my skills.
-          </p>
+          <div class="profile__content">
+            <p>
+              I've finished BSUIR for radioelectronics-engineer specialization.
+              I had worked as design engineer for two years after university. At
+              the moment I'm QA automation engineer.
+            </p>
+            <p>
+              I had learned JS for some hours per week for two or three months
+              before I found QA automation vacancy. I had completed test task
+              and got this job without any knowledge and experience in manual
+              testing, but of course I tried to learn all necessary things as
+              soon as possible after I started to work. My main working tool is
+              Cypress. This is a testing framework which uses JavaScript as a
+              scripting language. My general work tasks are UI and API testing.
+            </p>
+            <p>
+              I decided to try my self in development. I want to become a good
+              specialist to be able to work on interesting projects and create
+              something really cool. I'm a responsible worker and I always
+              strive to understand well of the tools and technologies which I
+              use. I always like to create, to search solution and to learn
+              something new especially if that can help with my job or improve
+              my skills.
+            </p>
+          </div>
         </section>
 
         <section class="skills">
           <h3>skills</h3>
-          <ul>
-            <li>
-              <span>git</span>
-              <div>8/10</div>
-            </li>
-            <li>
-              <span>html</span>
-              <div>7/10</div>
-            </li>
-            <li>
-              <span>css</span>
-              <div>7/10</div>
-            </li>
-            <li>
-              <span>sccs</span>
-              <div>5/10</div>
-            </li>
-            <li>
-              <span>webpack</span>
-              <div>5/10</div>
-            </li>
-          </ul>
+          <div class="skills__content">
+            <ul class="skills__list">
+              <li class="skills__item">
+                <span>git</span>
+                <div>8/10</div>
+              </li>
+              <li class="skills__item">
+                <span>html</span>
+                <div>7/10</div>
+              </li>
+              <li class="skills__item">
+                <span>css</span>
+                <div>7/10</div>
+              </li>
+              <li class="skills__item">
+                <span>sccs</span>
+                <div>5/10</div>
+              </li>
+              <li class="skills__item">
+                <span>webpack</span>
+                <div>5/10</div>
+              </li>
+              <li class="skills__item">
+                <span>js</span>
+                <div>5/10</div>
+              </li>
+            </ul>
+            <details>
+              <summary>Code example: Count characters in string</summary>
+              <pre>
+                function count (string) {
+                &nbsp;let chars = string.split('');
+                &nbsp;let result = {};
+
+                &nbsp;string.split('').forEach(char => result[char] = chars.filter(el => el === char).length);
+
+                &nbsp;return result;
+                }
+              </pre>
+            </details>
+          </div>
         </section>
 
         <section class="experience">

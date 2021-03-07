@@ -84,6 +84,10 @@ h2 {
   border-image-slice: 1;
 }
 
+h3 {
+  font-size: 1.25rem;
+}
+
 img {
   border-radius: 50%;
   width: 250px;
@@ -178,7 +182,102 @@ a {
 .contacts__link:hover {
   font-weight: bold;
   transition: all 0.1s ease-in;
-  transform: scale(1.02);
+  transform: scale(1.01);
+}
+
+section {
+  padding-top: 50px;
+}
+
+.profile__content,
+.skills__content {
+  padding-top: 20px;
+}
+
+p:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.skills__list {
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding: 0 10%;
+}
+
+.skills__item {
+  display: flex;
+  flex-flow: wrap;
+  margin-bottom: 20px;
+}
+
+.skills__item > span {
+  flex: 1;
+  text-transform: uppercase;
+  min-width: 100px;
+  font-weight: bold;
+}
+
+.skills__item > div {
+  flex: 2;
+  background-color: #c4e9ff;
+  min-width: 200px;
+  text-align: center;
+}
+
+.skills__item:nth-of-type(1) > div {
+  background: linear-gradient(to right, #d9bcff 80%, #c4e9ff 20%);
+}
+
+.skills__item:nth-child(2) > div,
+.skills__item:nth-child(3) > div {
+  background: linear-gradient(to right, #d9bcff 70%, #c4e9ff 30%);
+}
+
+.skills__item:nth-child(4) > div,
+.skills__item:nth-child(5) > div,
+.skills__item:nth-child(6) > div {
+  background: linear-gradient(to right, #d9bcff 50%, #c4e9ff 50%);
+}
+
+.skills__item::before {
+  content: url("./assets/stop1.svg");
+  width: 10px;
+  margin-right: 10px;
+  line-height: 22px;
+}
+
+details {
+  padding: 0 10%;
+  max-width: 100%;
+}
+
+summary {
+  border: 2px solid;
+  border-image-source: linear-gradient(
+    to right top,
+    #f1dbf6,
+    #e4dbfc,
+    #d4dbff,
+    #c2ddff,
+    #afdeff,
+    #a7dcff,
+    #9fdbff,
+    #97d9ff,
+    #a1d2ff,
+    #b9c8ff,
+    #d9bcff,
+    #faadf8
+  );
+  border-image-slice: 1;
+  padding: 0 10px;
+}
+
+pre {
+  white-space: pre-line;
+  font-size: 0.8rem;
+  background-color: #d9bcff;
 }
 
 @media only screen and (max-width: 965px) {
@@ -257,6 +356,13 @@ a {
 }
 @media only screen and (max-width: 450px) {
   html {
-    font-size: 12px;
+    font-size: 14px;
+  }
+
+  .skills__item::before {
+    content: url("./assets/stop1.svg");
+    width: 10px;
+    margin-right: 10px;
+    line-height: 24px;
   }
 }
