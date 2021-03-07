@@ -248,7 +248,7 @@ p:not(:last-of-type) {
   line-height: 22px;
 }
 
-details {
+.code-example {
   padding: 0 10%;
   max-width: 100%;
 }
@@ -278,6 +278,92 @@ pre {
   white-space: pre-line;
   font-size: 0.8rem;
   background-color: #d9bcff;
+  overflow: scroll;
+}
+
+h4 {
+  text-align: left;
+}
+
+.experience__content {
+  padding: 20px 10%;
+}
+
+.experience__list {
+  list-style: none;
+}
+
+.experience__item {
+  text-transform: uppercase;
+  display: flex;
+  font-weight: bold;
+}
+
+.experience__item::before {
+  display: flex;
+  content: url("./assets/stop1.svg");
+  width: 10px;
+  margin-right: 10px;
+  line-height: 22px;
+}
+
+.experience__details {
+  padding-left: 50px;
+}
+
+.education__content {
+  padding: 20px 10%;
+}
+
+.education__list {
+  list-style: none;
+}
+
+.education__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.education__item > h4 {
+  margin-left: 20px;
+}
+
+.education__item::before {
+  position: absolute;
+  content: url("./assets/stop1.svg");
+  width: 10px;
+  line-height: 22px;
+}
+
+.education__item > span {
+  margin-left: 20px;
+}
+
+.courses-list {
+  text-transform: uppercase;
+  margin-left: 40px;
+}
+
+.courses-list > li {
+  width: fit-content;
+  border-bottom: 2px solid;
+  border-image-source: linear-gradient(
+    to right top,
+    #f1dbf6,
+    #e4dbfc,
+    #d4dbff,
+    #c2ddff,
+    #afdeff,
+    #a7dcff,
+    #9fdbff,
+    #97d9ff,
+    #a1d2ff,
+    #b9c8ff,
+    #d9bcff,
+    #faadf8
+  );
+  border-image-slice: 1;
 }
 
 @media only screen and (max-width: 965px) {
