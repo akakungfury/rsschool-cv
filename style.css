@@ -88,7 +88,7 @@ h3 {
   font-size: 1.25rem;
 }
 
-img {
+.avatar {
   border-radius: 50%;
   width: 250px;
   height: 250px;
@@ -185,11 +185,18 @@ a {
   transform: scale(1.01);
 }
 
+.contacts__item:nth-of-type(2):hover {
+  letter-spacing: 1px;
+}
+
 section {
   padding-top: 50px;
 }
 
-.profile__content,
+.profile__content {
+  padding: 20px 5% 0 5%;
+}
+
 .skills__content {
   padding-top: 20px;
 }
@@ -396,6 +403,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 5%;
 }
 
 .social {
@@ -418,6 +426,7 @@ footer {
   transform: scale(1.1);
   transition: all 0.1s ease-in;
 }
+
 .year {
   height: 24px;
 }
@@ -496,12 +505,25 @@ footer {
     margin: 0;
   }
 }
+
 @media only screen and (max-width: 450px) {
   html {
     font-size: 14px;
   }
 
-  .skills__item::before {
+  .avatar {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+
+  .contacts__link > span {
+    display: none;
+  }
+
+  .skills__item::before,
+  .experience__item::before,
+  .education__item::before {
     content: url("./assets/stop1.svg");
     width: 10px;
     margin-right: 10px;
