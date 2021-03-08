@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="content-wrapper">
+      <header>
+        <h1>aliaksandr khudnitski</h1>
+        <h2>front end developer</h2>
+
+        <img class="avatar" src="./assets/hmpctr.png" alt="Avatar" />
+
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:alekskhudnitskiy@gmail.com">
+              <img src="./assets/020-mail.svg" alt="email icon" />
+              <span>alekskhudnitskiy@gmail.com</span>
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+37544702510">
+              <img src="./assets/032-phone.svg" alt="phone icon" />
+              <span>+375447025101</span>
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="https://telegram.me/chuckki">
+              <img src="./assets/035-send.svg" alt="telegram icon" />
+              <span>Chuckki</span>
+            </a>
+          </li>
+        </ul>
+      </header>
+
+      <main>
+        <section class="profile">
+          <h3>profile</h3>
+
+          <div class="profile__content">
+            <p>
+              I've finished BSUIR for radioelectronics-engineer specialization.
+              I had worked as design engineer for two years after university. At
+              the moment I'm QA automation engineer.
+            </p>
+            <p>
+              I had learned JS for some hours per week for two or three months
+              before I found QA automation vacancy. I had completed test task
+              and got this job without any knowledge and experience in manual
+              testing, but of course I tried to learn all necessary things as
+              soon as possible after I started to work. My main working tool is
+              Cypress. This is a testing framework which uses JavaScript as a
+              scripting language. My general work tasks are UI and API testing.
+            </p>
+            <p>
+              I decided to try my self in development. I want to become a good
+              specialist to be able to work on interesting projects and create
+              something really cool. I'm a responsible worker and I always
+              strive to understand well of the tools and technologies which I
+              use. I always like to create, to search solution and to learn
+              something new especially if that can help with my job or improve
+              my skills.
+            </p>
+          </div>
+        </section>
+
+        <section class="skills">
+          <h3>skills</h3>
+
+          <div class="skills__content">
+            <ul class="skills__list">
+              <li class="skills__item">
+                <span>git</span>
+                <div>8/10</div>
+              </li>
+              <li class="skills__item">
+                <span>html</span>
+                <div>7/10</div>
+              </li>
+              <li class="skills__item">
+                <span>css</span>
+                <div>7/10</div>
+              </li>
+              <li class="skills__item">
+                <span>sccs</span>
+                <div>5/10</div>
+              </li>
+              <li class="skills__item">
+                <span>webpack</span>
+                <div>5/10</div>
+              </li>
+              <li class="skills__item">
+                <span>js</span>
+                <div>5/10</div>
+              </li>
+            </ul>
+
+            <details class="code-example">
+              <summary>Code example: Count characters in string</summary>
+              <pre>
+                function count (string) {
+                &nbsp;let chars = string.split('');
+                &nbsp;let result = {};
+
+                &nbsp;string.split('').forEach(char => result[char] = chars.filter(el => el === char).length);
+
+                &nbsp;return result;
+                }
+              </pre>
+            </details>
+          </div>
+        </section>
+
+        <section class="experience">
+          <h3>experience</h3>
+
+          <div class="experience__content">
+            <ul class="experience__list">
+              <li class="experience__item">
+                <h4>QA Automation Engineer</h4>
+              </li>
+
+              <details>
+                <summary>QA Camp, since November 2018:</summary>
+                <ul class="experience__details">
+                  <li>UI and API automated testing</li>
+                  <li>mentoring</li>
+                  <li>teamwork</li>
+                  <li>production experience</li>
+                </ul>
+              </details>
+            </ul>
+          </div>
+        </section>
+
+        <section class="education">
+          <h3>education</h3>
+
+          <div class="education__content">
+            <ul class="education__list">
+              <li class="education__item">
+                <h4>Radioelectronics Engineer</h4>
+                <span
+                  >Belarusian State University of Informatics and
+                  Radioelectronics</span
+                >
+              </li>
+
+              <li class="education__item">
+                <h4>Online learning:</h4>
+                <ul class="courses-list">
+                  <li>
+                    <a
+                      href="https://htmlacademy.ru/profile/id823363/achievements"
+                      >htmlacademy</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.codewars.com/users/akakungfury/stats"
+                      >codewars</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="education__item">
+                <h4>english language</h4>
+                <span> My level is between A1 and A2</span>
+                <span>I'm learning English by myself </span>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <div class="content-wrapper">
+        <div class="footer__content">
+          <div class="social">
+            <a href="https://github.com/akakungfury" class="social__item"
+              ><img src="./assets/github.svg" alt="github logo"
+            /></a>
+            <a
+              href="https://www.youtube.com/channel/UC578nebW2Mn-mNgjEArGZug"
+              class="social__item"
+              ><img src="./assets/logo-rs.svg" alt="rssc logo"
+            /></a>
+          </div>
+          <div class="year">2021</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
